@@ -138,6 +138,8 @@
 //#define BLUETOOTH
 
 // Choose the name from boards.h that matches your setup
+#define MOTHERBOARD BOARD_RAMPS_14_EEF
+
 #ifndef MOTHERBOARD
   #define MOTHERBOARD BOARD_RAMPS_14_EFB
 #endif
@@ -554,6 +556,12 @@
 #define HOTEND_OVERSHOOT 15   // (°C) Forbid temperatures over MAXTEMP - OVERSHOOT
 #define BED_OVERSHOOT    10   // (°C) Forbid temperatures over MAXTEMP - OVERSHOOT
 #define COOLER_OVERSHOOT  2   // (°C) Forbid temperatures closer than OVERSHOOT
+
+/**
+Chamber config
+ */
+#define TEMP_CHAMBER_PIN              14  // Analog Input
+#define HEATER_CHAMBER_PIN            57
 
 //===========================================================================
 //============================= PID Settings ================================
